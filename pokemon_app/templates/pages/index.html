@@ -11,6 +11,15 @@
             <div class = 'row justify-content-center align-self-center'>
                 <button> <a href="{% url 'pokemon_app:pokemon'%}">Generate Team</a> </button>
             </div>
+            <br>
+            <br>
+            <div class = 'row justify-content-center'>
+            <form action="{% url 'pokemon_app:pokemon'%}" method="get" target="_blank">
+                <label for="id"> id:</label>
+                <input type="text" id="id" name="id">
+                <input type="submit" value="Submit">
+            </form>
+            </div>
         
         </div>
     </body>
